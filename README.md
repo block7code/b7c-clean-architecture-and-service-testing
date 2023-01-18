@@ -3,7 +3,7 @@
 
 Flutter - App Clean Architecture State Management (Provider)
 
-# Arquitetura
+# Architecture
 
 Clean Architecture Design Pattern for Dart/Flutter: (https://github.com/Flutterando/Clean-Dart)
 <img width="891" alt="Captura" src="https://user-images.githubusercontent.com/73594036/167706355-c55694dd-6804-48a7-9da3-36816fedeaee.png">
@@ -14,14 +14,12 @@ Architecture Project Folder Organization: (Feature )
 <img width="262" alt="flutter test"  src="https://user-images.githubusercontent.com/73594036/167706714-e4231c07-c332-4a91-ad48-0f009c875697.png">
 
 
-# Testes Service
+# Tester Service Login
  - Testes Service Login
  - Presenter (Provider)
  - UseCase / Domain
  - Repository
  - DataSource
-
-# Teste 
 
 flutter test
 
