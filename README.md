@@ -1,16 +1,33 @@
 # b7c_clean_architecture
 
-A new Flutter project.
 
-## Getting Started
+Flutter - App Clean Architecture State Management (Provider)
 
-This project is a starting point for a Flutter application.
+# Arquitetura
 
-A few resources to get you started if this is your first Flutter project:
+Proposta de Arquitetura Limpa para o Dart/Flutter: (https://github.com/Flutterando/Clean-Dart)
+<img width="891" alt="Captura de Tela 2022-05-10 às 16 23 24" src="https://user-images.githubusercontent.com/73594036/167706355-c55694dd-6804-48a7-9da3-36816fedeaee.png">
+<img width="831" alt="Captura de Tela 2022-05-10 às 16 23 38" src="https://user-images.githubusercontent.com/73594036/167706330-c104cb79-5dd8-4a3a-92c1-d393768dce12.png">
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Arquitetura de pastas usadas no projeto:
+(Feature de Carros)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+<img width="262" alt="Captura de Tela 2022-05-10 às 16 26 16" src="https://user-images.githubusercontent.com/73594036/167706714-e4231c07-c332-4a91-ad48-0f009c875697.png">
+
+
+# Testes (Unit / Widget)
+
+O aplicativo possui testes nas seguintes camadas:
+
+ - Testes de Widget
+ - Presenter (Cubit)
+ - UseCase / Domain
+ - Repository
+ - DataSource
+
+# Teste 
+
+flutter test
+
+<img width="514" alt="Captura de Tela 2022-05-10 às 16 43 42" src="https://user-images.githubusercontent.com/73594036/167709550-ac58b779-cf07-4a56-a7c0-4b065ca1c2bd.png">
