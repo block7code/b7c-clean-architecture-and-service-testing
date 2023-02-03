@@ -46,7 +46,7 @@ Future<void> main() async {
 
     testWidgets('Faild', (widgetTester) async {
       RequestExampleEntity requestExampleEntity =
-          RequestExampleEntity(username: '', password: '');
+          RequestExampleEntity(username: 'hkk', password: '');
 
       when(() => loginRepository.exampleLogin(mockBuildContext,
               path: '/auth/login', requestExampleEntity: requestExampleEntity))

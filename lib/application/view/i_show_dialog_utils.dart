@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:b7c_clean_architecture/core/utils/i_show_dialog_utils.dart';
 
@@ -26,6 +28,7 @@ class IShowDialogUtils extends IBaseShowDialog {
     String errorCode = "";
     String message = "";
     var localeEn = "en" == "en";
+
     if (statusCode == 500) {
       errorCode = json?['result']['errorCode'] ?? "";
       message = localeEn
@@ -33,6 +36,9 @@ class IShowDialogUtils extends IBaseShowDialog {
           : (json?['result']['idnMessage'] ?? "");
     } else {
       errorCode = json?['errorCode'] ?? "";
+      if (statusCode.toString().isNotEmpty) {
+        errorCode = statusCode.toString();
+      }
       message = localeEn ? (json?['message'] ?? "") : (json?['message'] ?? "");
     }
     ScaffoldMessenger.of(context).showSnackBar(

@@ -75,7 +75,7 @@ class Api extends BaseApi {
   @override
   Future showErrorDialog(BuildContext context, int statusCode,
       {Map<String, dynamic>? json}) async {
-    await iBaseShowDialog.showErrorDialog(context, statusCode);
+    await iBaseShowDialog.showErrorDialog(context, statusCode, json: json);
   }
 
   @override
